@@ -28,16 +28,11 @@ main {
     text-align: center;
 }
 
-/* Images */
+/* Profile images */
 img {
     width: 200px;
     border-radius: 10px;
     margin: 1rem;
-}
-
-/* Accent elements */
-.accent {
-    color: #4E8087;
 }
 
 /* Footer */
@@ -48,4 +43,63 @@ footer {
     padding: 1rem;
     margin-top: 3rem;
     font-size: 1rem;
+}
+
+/* Hobbies Section */
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+section h2 {
+    color: #4E8087;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 1rem;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+/* Photo Gallery */
+figure {
+    margin: 2rem auto;
+}
+
+figure img {
+    width: 640px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #3D666A;
+}
+
+/* Article */
+article {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    border: 2px solid #4E8087;
+    border-radius: 10px;
+    background-color: white;
+}
+
+article h2 {
+    color: #234045;
+    margin-bottom: 1rem;
+}
+
+article p {
+    text-align: left;
+    line-height: 1.7;
+    margin-bottom: 1rem;
 }
