@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me – Uzair Ahmed</title>
 
     <!-- Google Fonts -->
@@ -23,7 +25,7 @@
         <img src="images/bob.svg" alt="My BOB">
 
         <p>
-            Hello! My name is Uzair Ahmed. I am an Interface Design &
+            Hello! My name is Uzair Ahmed. I am an Interface Design &amp;
             Web Development major at RVCC. I enjoy technology, web
             development, cars, photography, and learning new skills.
         </p>
@@ -85,11 +87,64 @@
             </div>
         </article>
 
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form method="post" action="https://api.web3forms.com/submit">
+
+                <!-- Hidden inputs for Web3Forms -->
+                <input type="hidden" name="access_key" value="88d8ab8c-6c74-49e8-963c-eb9e5e4cdcb1">
+                <input type="hidden" name="subject" value="New message from my About Me page">
+                <input type="hidden" name="redirect"
+                    value="https://rvcc-grid.github.io/fa26-about-me-uzairahmed008/thanks.html">
+
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <label for="name">Name (Required):</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email (Required):</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone (Optional):</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="phone-type">Phone Type:</label>
+                    <select id="phone-type" name="phone-type">
+                        <option value="mobile">Mobile</option>
+                        <option value="home">Home</option>
+                        <option value="work">Work</option>
+                    </select>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+
+                    <label>Would you like a follow-up?</label>
+                    <ul class="radio-group">
+                        <li><input type="radio" id="followup-yes" name="followup" value="yes"> <label
+                                for="followup-yes">Yes</label></li>
+                        <li><input type="radio" id="followup-no" name="followup" value="no"> <label
+                                for="followup-no">No</label></li>
+                    </ul>
+
+                    <!-- Spam protection -->
+                    <div class="h-captcha" data-captcha="true"></div>
+
+                    <button type="submit">Send Message</button>
+                </fieldset>
+            </form>
+        </section>
+
     </main>
 
     <footer>
         © 2026 Uzair Ahmed
     </footer>
 
+    <!-- Web3Forms Script -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
 </body>
+
 </html>
