@@ -11,24 +11,42 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
 
     <header>
-        <h1>About Me</h1>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/avataaars.png" class="logo-img" alt="Uzair Ahmed Logo">
+                <h1 class="logo-title">About Me</h1>
+            </div>
+
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#bio" class="nav-links">Bio</a></li>
+                    <li><a href="#gallery" class="nav-links">Gallery</a></li>
+                    <li><a href="#lit" class="nav-links">Blog</a></li>
+                    <li><a href="#contact" class="nav-links">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
 
-        <img src="images/avataaars.png" alt="My Avatar">
-        <img src="images/bob.svg" alt="My BOB">
+        <!-- Added id="bio" here -->
+        <section id="bio">
+            <img src="images/avataaars.png" alt="My Avatar">
+            <img src="images/bob.svg" alt="My BOB">
 
-        <p>
-            Hello! My name is Uzair Ahmed. I am an Interface Design &amp;
-            Web Development major at RVCC. I enjoy technology, web
-            development, cars, photography, and learning new skills.
-        </p>
+            <p>
+                Hello! My name is Uzair Ahmed. I am an Interface Design &amp;
+                Web Development major at RVCC. I enjoy technology, web
+                development, cars, photography, and learning new skills.
+            </p>
+        </section>
 
         <section>
             <h2>My Hobbies</h2>
@@ -42,7 +60,8 @@
             </ul>
         </section>
 
-        <section>
+        <!-- Added id="gallery" here -->
+        <section id="gallery">
             <h2>Photo Gallery</h2>
 
             <hr>
@@ -66,7 +85,8 @@
         <article>
             <h2>The Adventures of Sherlock Holmes</h2>
 
-            <div>
+            <!-- Added id="lit" here -->
+            <div id="lit">
                 <p>
                     Sherlock Holmes is one of the most famous detectives in literature.
                     Through careful observation and logical reasoning, Holmes solves

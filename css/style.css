@@ -9,18 +9,6 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #234045;
-    padding: 2rem;
-    text-align: center;
-}
-
-header h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
-    color: #CEC5BA;
-}
-
 main {
     padding: 2rem;
     max-width: 900px;
@@ -54,7 +42,7 @@ section h2 {
 }
 
 /* Step 1: Center Hobbies using Flexbox */
-section:nth-of-type(1) {
+section:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,7 +147,7 @@ article p:first-child::first-letter {
 @media screen and (min-width: 100em) {
 
     /* Step 5: 3-Column Gallery Grid */
-    section:nth-of-type(2) {
+    section:nth-of-type(3) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
@@ -167,8 +155,8 @@ article p:first-child::first-letter {
         margin: 3rem auto;
     }
 
-    section:nth-of-type(2) h2,
-    section:nth-of-type(2) hr {
+    section:nth-of-type(3) h2,
+    section:nth-of-type(3) hr {
         grid-column: 1 / -1;
     }
 
